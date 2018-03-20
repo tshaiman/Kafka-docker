@@ -26,3 +26,8 @@ docker-compose up
 ### Access
 * Schema Registry can be accessed at: http://localunixsocket:8081/subjects
 * Kafka can be accessed at localunixsocket:9092
+
+### Usefull Docker Commands 
+you can put the following commands as Aliases in your terminal .bashrc or .zshrc
+* alias dkill='sudo docker rm -f $(sudo docker ps -a -q)'
+* alias dkrmi='sudo docker rmi $(sudo docker images -f "dangling=true" -q)'
